@@ -101,10 +101,10 @@ LINK: https://www.figma.com/file/lThOe2g8CX1vbsLWeCfuiM/NEAR-EARTH-OBJECT-APPLIC
 3. COMPARISONS - COMPARING THE SIZE TO OBJECTS
 4. 
 
-  ----------------------- GOALS --------------------------
+   ----------------------- GOALS --------------------------
 
 DAY 1: FRI
-Build the plan for the project. Wrote the readme.md.  Start the wireframe.
+Build the plan for the project and connect with github.  Chose the correct path for my API. Wrote the readme.md.  Start the wireframe.
 today, yesterday, blockers, if I might need help with anything
 
 DAY 2: MON
@@ -133,9 +133,9 @@ Present to the Group.
 |                        |          | HOURS     | HOURS   |
 |------------------------|----------|-----------|---------|
 |FIGMA DESIGN            |     H    |     3     |    3    |
-|PSEUDO CODE             |     H    |    .5     |         |
+|PSEUDO CODE             |     H    |    .5     |   .5    |
 |FETCH THE API JS        |     H    |     3     |         |
-|CREATE HTML BASE        |     H    |     1     |         |
+|CREATE HTML BASE        |     H    |     1     |    1    |
 |CSS STYLING /FLEX       |     M    |     6     |         |
 |RESPONSIVE DESIGN       |     H    |     6     |         |
 |EVENT LISTENERS JS      |     H    |     3     |         |
