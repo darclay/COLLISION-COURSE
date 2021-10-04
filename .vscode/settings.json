@@ -1,0 +1,5 @@
+{
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never"
+}

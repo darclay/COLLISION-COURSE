@@ -1,5 +1,5 @@
 // https://api.nasa.gov/neo/rest/v1/feed?start_date=2021-10-01&end_date=2021-10-01&api_key=0eJcYmnO2iE9jsyArre7QyVJRPWqTsaT7BGUaLHX
-
+//KEY= 0eJcYmnO2iE9jsyArre7QyVJRPWqTsaT7BGUaLHX
 /*
 Get a working fetch
   - deserialize the API
@@ -16,12 +16,19 @@ Get the "Number of Objects" to add up to the fetch Data
 
 fetch
 */
+const todaysDate = new Date();
+// console.log(todaysDate);
+let todaysDateFormatted = `${todaysDate.getFullYear()}-${todaysDate.getMonth()+1}-${todaysDate.getDate()}`;
+console.log(todaysDateFormatted);
+// https://phoenixnap.com/kb/how-to-get-the-current-date-and-time-javascript
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 
-console.log('Hello')
 
 const fetchData = (dateInput) => {
-  const nasaAPI = 'https://api.nasa.gov/neo/rest/v1/feed?start_date=${dateInput}&end_date=?{date format YEAR-MN-DY}&api_key=${PERSONAL KEY GOES HERE}'
-
-
+  fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${dateInput}&end_date=${dateInput}&api_key=0eJcYmnO2iE9jsyArre7QyVJRPWqTsaT7BGUaLHX`)
+    .then((response) => { return response.json() })
+    .then((responseJSON) => {
+      console.log(responseJSON);    
+    })
 }
-
+fetchData(todaysDateFormatted);
