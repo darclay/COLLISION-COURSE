@@ -134,13 +134,13 @@ Present to the Group.
 |------------------------|----------|-----------|---------|
 |FIGMA DESIGN            |     H    |     3     |    3    |
 |PSEUDO CODE             |     H    |    .5     |   .5    |
-|FETCH THE API JS        |     H    |     3     |         |
+|FETCH THE API JS        |     H    |     3     |    4    |
 |CREATE HTML BASE        |     H    |     1     |    1    |
 |CSS STYLING /FLEX       |     M    |     6     |         |
 |RESPONSIVE DESIGN       |     H    |     6     |         |
 |EVENT LISTENERS JS      |     H    |     3     |         |
-|LOCATE DOM ELEM.        |     H    |     3     |         |
-|ADD DOM ELEM. INNERTEXT |     H    |     3     |         | 
+|LOCATE DOM ELEM.        |     H    |     3     |    2    |
+|ADD DOM ELEM. INNERTEXT |     H    |     3     |   .5    | 
 |------------------------|----------|-----------|---------|
 
 ------------------ TECHNICAL DEMONSTATION -----------------

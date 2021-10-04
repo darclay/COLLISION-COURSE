@@ -32,3 +32,7 @@ const fetchData = (dateInput) => {
     })
 }
 fetchData(todaysDateFormatted);
+
+
+const dateP = document.querySelector('#dateP');
+dateP.innerText = todaysDateFormatted;
