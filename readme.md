@@ -104,35 +104,43 @@ LINK: https://www.figma.com/file/lThOe2g8CX1vbsLWeCfuiM/NEAR-EARTH-OBJECT-APPLIC
   ----------------------- GOALS --------------------------
 
 DAY 1: FRI
-This is what I will accomplish this day
-DAY 2: SAT
-etc
-DAY 3: SUN
+Build the plan for the project. Wrote the readme.md.  Start the wireframe.
+today, yesterday, blockers, if I might need help with anything
 
-DAY 4: MON
+DAY 2: MON
+Finish the timelines for the project plan.
+Complete the wireframe.
+Write the Pseudo Code.
+Set up the HTML.
+Get my API to connect.
 
-DAY 5: TUES
+DAY 3: TUES
+Complete all JS code.
 
-DAY 6: WED
+DAY 4: WED
+Finish JS code.
+Complete all Styling
 
-DAY 7: THURS
+DAY 5: THURS
+Bug fixes.
 
-DAY 8: FRI
+DAY 6: FRI
+Present to the Group.
 
   ---------------------- TIMEFRAMES ----------------------
 
 | EVENT                  | PRIORITY | ESTIMATED | ACTUAL  |
 |                        |          | HOURS     | HOURS   |
 |------------------------|----------|-----------|---------|
-|FIGMA DESIGN            |          |           |         |
-|PSEUDO CODE             |          |           |         |
-|FETCH THE API JS        |          |           |         |
-|CREATE HTML BASE        |          |           |         |
-|CSS STYLING /FLEX       |          |           |         |
-|RESPONSIVE DESIGN       |          |           |         |
-|EVENT LISTENERS JS      |          |           |         |
-|LOCATE DOM ELEM.        |          |           |         |
-|ADD DOM ELEM. INNERTEXT |          |           |         | 
+|FIGMA DESIGN            |     H    |     3     |    3    |
+|PSEUDO CODE             |     H    |    .5     |         |
+|FETCH THE API JS        |     H    |     3     |         |
+|CREATE HTML BASE        |     H    |     1     |         |
+|CSS STYLING /FLEX       |     M    |     6     |         |
+|RESPONSIVE DESIGN       |     H    |     6     |         |
+|EVENT LISTENERS JS      |     H    |     3     |         |
+|LOCATE DOM ELEM.        |     H    |     3     |         |
+|ADD DOM ELEM. INNERTEXT |     H    |     3     |         | 
 |------------------------|----------|-----------|---------|
 
 ------------------ TECHNICAL DEMONSTATION -----------------
