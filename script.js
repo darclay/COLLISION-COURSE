@@ -31,20 +31,25 @@ const fetchData = (dateInput) => {
   fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${dateInput}&end_date=${dateInput}&api_key=0eJcYmnO2iE9jsyArre7QyVJRPWqTsaT7BGUaLHX`)
     .then((response) => { return response.json() })
     .then((responseJSON) => {
-      console.log(responseJSON); 
-      
-      //calling on the dom for the date <p> and assigning it todays date
-      const dateP = document.querySelector('#dateP');
-      dateP.value = todaysDateFormatted;
-      //calling on the number <p> and need to assign the fetch data
-      const numP = document.querySelector('#numP');
+    console.log(responseJSON); 
+    
+    const numP = document.querySelector('#numP');
+    numP.innerText = responseJSON.element_count; 
     })
 }
+
+//This is where I modify the dom to include the section I need.
+//calling on the dom for the date <p> and assigning it todays date
+const dateP = document.querySelector('#dateP');
+dateP.innerText = todaysDateFormatted;
+//calling on the number <p> and need to assign the fetch data
+
+
 
 window.addEventListener('load', (event) => {
   event.preventDefault();  
   console.log("hello, the addEvent is working")
   fetchData(todaysDateFormatted)
-  //This is where I modify the dom to include the section I need.
-
+  
+  //This is where the number API needs to live
 })
