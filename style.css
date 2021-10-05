@@ -1,3 +1,31 @@
-h1 {
-  color: red;
+header {
+  background-color: rgb(122, 118, 118);
+}
+
+main {
+  background-color: aquamarine;
+}
+
+#Todays_Section {
+  background-color: chartreuse;
+}
+
+#NumOfObjects {
+  background-color: chartreuse;
+}
+
+#UserInput {
+  background-color: chartreuse;
+}
+
+aside {
+  background-color: gray;
+}
+
+summary {
+  background-color: darkgoldenrod;
+}
+
+p {
+  background-color: mediumblue;
 }

@@ -78,15 +78,15 @@ const fetchUserData = (userDate) => {
     const collSizeMax = document.createElement('p');
     const collSizeMin = document.createElement('p');
     const collSpeed = document.createElement('p');
-    // const collDist = document.createElement('p');
+    const collDist = document.createElement('p');
 
     
 
-    collName.innerText = collisionObject[i].name;
-    collSizeMax.innerText = collisionObject[i].estimated_diameter.feet.estimated_diameter_max;
-    collSizeMin.innerText = collisionObject[i].estimated_diameter.feet.estimated_diameter_min;
-    collSpeed.innerText = collisionObject[i].close_approach_data[0].relative_velocity].miles_per_hour;
-    // collDist.innerText = collisionObject[i].close_approach_data[miss_distance].miles;
+    collName.innerText = `Name of Astroid: ${collisionObject[i].name}`;
+    collSizeMax.innerText = `Estimated Max Diameter: ${collisionObject[i].estimated_diameter.feet.estimated_diameter_max} feet`;
+    collSizeMin.innerText = `Estimated Min Diameter: ${collisionObject[i].estimated_diameter.feet.estimated_diameter_min} feet`;
+    collSpeed.innerText = `Speed at Close Approach: ${collisionObject[i].close_approach_data[0].relative_velocity.miles_per_hour} mph`;
+    collDist.innerText = `Distance from Earth at Close Approach: ${collisionObject[i].close_approach_data[0].miss_distance.miles} miles away`;
     
     
     
@@ -94,14 +94,13 @@ const fetchUserData = (userDate) => {
     summary.appendChild(collSizeMax);
     summary.appendChild(collSizeMin);
     summary.appendChild(collSpeed);
-    // summary.appendChild(collDist);
+    summary.appendChild(collDist);
     }
 
 
   });
   }
-  //   for (let i=0; i < collisionObject.length; i++) {  
-  //       // console.log(collisionObject[i].name);
+  
 
 const submit = document.querySelector('#submit');
 submit.addEventListener('click', (event) => {
@@ -109,4 +108,10 @@ submit.addEventListener('click', (event) => {
     console.log('button was pressed');
     let userDate = document.querySelector('#userDateInput').value;
     fetchUserData(userDate)
+});
+//http://www.learningaboutelectronics.com/Articles/How-to-create-a-refresh-page-button-using-Javascript.php
+const refresh = document.querySelector('#button');
+refresh.addEventListener('click', (event) => {
+  event.preventDefault();
+  location.reload();
 });
