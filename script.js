@@ -17,9 +17,12 @@ Get the "Number of Objects" to add up to the fetch Data
 fetch
 */
 const todaysDate = new Date();
-// console.log(todaysDate);
+console.log(todaysDate);
+
 let todaysDateFormatted = `${todaysDate.getFullYear()}-${todaysDate.getMonth()+1}-${todaysDate.getDate()}`;
+
 console.log(todaysDateFormatted);
+
 // https://phoenixnap.com/kb/how-to-get-the-current-date-and-time-javascript
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 
@@ -28,11 +31,20 @@ const fetchData = (dateInput) => {
   fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${dateInput}&end_date=${dateInput}&api_key=0eJcYmnO2iE9jsyArre7QyVJRPWqTsaT7BGUaLHX`)
     .then((response) => { return response.json() })
     .then((responseJSON) => {
-      console.log(responseJSON);    
+      console.log(responseJSON); 
+      
+      //calling on the dom for the date <p> and assigning it todays date
+      const dateP = document.querySelector('#dateP');
+      dateP.value = todaysDateFormatted;
+      //calling on the number <p> and need to assign the fetch data
+      const numP = document.querySelector('#numP');
     })
 }
-fetchData(todaysDateFormatted);
 
+window.addEventListener('load', (event) => {
+  event.preventDefault();  
+  console.log("hello, the addEvent is working")
+  fetchData(todaysDateFormatted)
+  //This is where I modify the dom to include the section I need.
 
-const dateP = document.querySelector('#dateP');
-dateP.innerText = todaysDateFormatted;
+})
