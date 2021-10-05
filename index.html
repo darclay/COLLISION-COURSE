@@ -21,10 +21,11 @@
     <h1>COLLISION COURSE</h1> <!-- ADD A FONT STYLE -->
     <!-- background img of stars in css -->
     <!-- I will put the spaceman graphic in here-->
+    <img id="spaceman" src="img/Spaceman.png" alt="spaceman"> 
   </header>
   <main>
     <section id='Todays_Section'>
-      <h3>Today's Date Is:</h3>
+      <h2>Today's Date Is:</h2>
       <p id="dateP"></p>
     </section>
 
@@ -41,7 +42,7 @@
       <input type='submit' id='submit' value='Submit'></br>
       <input type='button' id='button' value='Refresh'>
     </section>
-
+  </main>
     <aside>
       Enter a date to the left and you will see a list of near earth objects below. Scroll below to see all objects that
       passed by Earth on the date you entered.
@@ -53,11 +54,10 @@
       <!-- I need to use the dom to create divs for each one of the elements of the array.  Perhaps use a for loop to add divs. -->
     </summary>
   
-  </main>
+  
 
   <footer>
-    text here
-    <!--
+      <!--
       disclaimer: all information on this website is owned and controlled by NASA- Jet Propulsion Laboratory (California Institute of Technology).
       web link: https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/ ; https://api.nasa.gov/
       The API used in this site is maintained by SpaceRocks Team: David Greenfield, Arezu Sarvestani, Jason English and Peter Baunach.
