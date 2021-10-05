@@ -1,6 +1,18 @@
-header {
-  background-color: rgb(122, 118, 118);
+html {
+background-color: black;
 }
+
+h1 {
+  color: white;
+}
+
+header {
+background-image: url(img/stars.jpg);
+background-size: cover;
+background-position: center;
+opacity: .5;  
+}
+
 
 main {
   background-color: aquamarine;
@@ -28,4 +40,13 @@ summary {
 
 p {
   background-color: mediumblue;
+}
+footer {
+background-image: url(img/Earth.png);
+background-size: cover;
+background-position: center;
+background-position: bottom;
+color: white;
+padding-bottom: 200px;
+
 }
