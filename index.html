@@ -18,11 +18,13 @@
 
 <body>
   <header>
+    <!-- <img id="spaceman" src="img/Spaceman.png" alt="spaceman"> -->
     <h1>COLLISION COURSE</h1> <!-- ADD A FONT STYLE -->
-    <p>Below you will see the number of Astroids that are passing by Earth today.  </p>
+    </div>
+    <a href='https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/' target='_blank'><img id="nasaLogo" src='img/nasa.jpg' alt='nasa logo'></a>
+    <p id='bannerP'>Below you will see the number of Astroids that are passing by the Earth today.  </p>
     <!-- background img of stars in css -->
     <!-- I will put the spaceman graphic in here-->
-    <img id="spaceman" src="img/Spaceman.png" alt="spaceman"> 
   </header>
   <main>
     <div class='div1'>
@@ -38,14 +40,15 @@
     </div>
 
     <section id="UserInput">
-      <h3>Choose Your Own Date</h3>
-      <p> Enter a date to see a list of near earth objects that
-        passed by Earth on the date you entered.</p>
-      <input type='date' id='userDateInput' name="dateInput" value='' min="1900-12-25" max='TodaysDate'></br>
-      <!--The user date input has to be enter in the following format (YEAR-MN-DY) I need to convert the date entered like so.-->
-      <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date-->
-      <input type='submit' id='submit' value='Submit'></br>
-      <input type='button' id='button' value='Refresh'>
+      <div class='div2'>
+        <h3>Choose Your Own Date</h3>
+        <input type='date' id='userDateInput' name="dateInput" value='' min="1900-12-25" max='TodaysDate'></br>
+        <!--The user date input has to be enter in the following format (YEAR-MN-DY) I need to convert the date entered like so.-->
+        <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date-->
+        <input type='submit' id='submit' value='Submit'></br>
+        <input type='button' id='button' value='Refresh'>
+      </div>
+      <p id='sectionP'> Enter a date to see a list of near earth objects that passed by Earth on the date you entered.</br>To get more information, copy the astroid name and click on the NASA icon on the top right of your screen.</br>Click Refresh to Clear Results</p>
     </section>
   </main>
     <aside>
