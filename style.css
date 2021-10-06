@@ -240,6 +240,27 @@ H6 {
   width: 100%;
   padding-top: 20px;
 }
+}
 
+@media (max-width: 400px) {
+  h1 {
+    font-size: 40px;
+  }
+  #sectionP {
+    font-size: 14px;
+  }
+}
 
+@media (max-width: 240px) {
+  h1 {
+    font-size: 30px;
+  }
+  #sectionP {
+    font-size: 10px;
+  }
+}
+@media (max-width: 200px) {
+  html {
+    display: none;
+  }
 }
