@@ -4,11 +4,15 @@ background-color: black;
 
 h1 {
   color: white;
+  font-size: 64px;
   text-align: center;
+  padding-top: 20px;
 }
 
+
+
 header {
-min-height: 100px;
+min-height: 200px;
 background-image: url(img/stars.jpg);
 /* linear-gradient(to bottom, rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.98),  */
 background-size: cover;
@@ -19,46 +23,115 @@ padding-bottom: 5px;
 }  
 
 #spaceman {
-width: 10%;
+width: 200px;
 position: absolute;
-top: 15px;
-left: 15px;
+top: 1%;
+left: 100px;
 }
 
 
 main {
- /* pending */
+ 
 }
 
+/* ======================================================= */
+
+div {
+display: flex;
+
+}
+
+
+/* ======================================================= */
+
+/* -----------------------TODAY'S SECTION----------------- */
+
 #Todays_Section {
+  display: inline-block;
   position: relative;
-  margin-top: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: white;
+  border: solid white 1px;
+  width: 23%;
+  background-color: rgba(166, 168, 170, 0.377);
+  text-align: center;  
+}
+h2 {
+font-size: 1em;
+background-color: purple;
+}
+#dateP {
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  padding-left: .5em;
+  padding-right: .5em;
+  margin-left: 35%;
+  margin-right: 35%;
+  max-width: 30%;
+}
+
+/* ------------------NUMBER OF OBJECTS SECTION------------ */
+
+#NumOfObjects {
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: solid white 1px;
+  width: 75%;
+  background-color: rgb(194, 191, 191);
   text-align: center;
   
 }
-
-#NumOfObjects {
-  position: relative;
-  margin-top: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: white;
-  text-align: center;
- 
+h4 {
+  display: inline-block;
+  font-size: 1em;
+  background-color: orange;
 }
+#numP {
+  display: inline-block;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  padding-left: 1em; 
+  padding-right: 1em; 
+  margin-left: 1em;
+  /* margin-right: 25%; */
+  background-color: pink;
+}
+
+/* -----------CHOOSE YOUR OWN DATE SECTION--------------- */
 
 #UserInput {
   position: relative;
   margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: white;
+  background-color: transparent;
   text-align: center;
-  
   }
+h3 {
+  text-align: center;
+  color: white;
+}
+p {
+  color: white;
+  text-align: center;
+}
+#userDateInput {
+  margin-bottom: 5px;
+  text-align: center;
+  padding-left: 2em;
+}
+#submit {
+  margin-bottom: 5px;
+}
+#button {
+  /* no styling */
+}
+
+/* -----------------DATA DISPLAY SECITON----------------- */
 
 aside {
   position: relative;
@@ -71,50 +144,33 @@ aside {
 }
 
 summary {
-  background-color: darkgoldenrod;
+  background-color: black;
+  color: white;
+  transition: background-color 5s ease-out;
 }
-
-#dateP {
-  text-align: center;
-  border-style: solid;
-  border-color: black;
-  padding-left: .5em;
-  padding-right: .5em;
-  margin-left: 35%;
-  margin-right: 35%;
-  max-width: 30%;
+summary:hover {
+  background-color: rgb(26, 26, 93);
 }
-
-#numP {
-  text-align: center;
-  border-style: solid;
-  border-color: black;
-  padding-left: 1em; 
-  padding-right: 1em; 
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-h3 {
-  text-align: center;
-}
-
-#userDateInput {
-  margin-bottom: 5px;
-}
-#submit {
-  margin-bottom: 5px;
-}
-
 
 aside {
   color: white;
 }
+
+/* ------------------FOOTER SECTION-------------------------- */
+
 footer {
-background-image: url(img/Earth.png);
-background-size: cover;
-background-position: center;
-background-position: bottom;
-color: white;
-padding-bottom: 200px;
+background-color: black;
 }
+H6 {
+  color: white;
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  }
+#earthImg {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  
+}
+
