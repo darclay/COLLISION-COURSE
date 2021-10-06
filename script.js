@@ -18,10 +18,12 @@ fetch
 */
 const todaysDate = new Date();
 console.log(todaysDate);
-
 let todaysDateFormatted = `${todaysDate.getFullYear()}-${todaysDate.getMonth()+1}-${todaysDate.getDate()}`;
 console.log(todaysDateFormatted);
 
+
+let displayedDate = `${todaysDate.getMonth()+1}-${todaysDate.getDate()}-${todaysDate.getFullYear()}`;
+console.log(displayedDate);
 // https://phoenixnap.com/kb/how-to-get-the-current-date-and-time-javascript
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 
@@ -41,6 +43,8 @@ const fetchData = (dateInput) => {
 //calling on the dom for the date <p> and assigning it todays date
 const dateP = document.querySelector('#dateP');
 dateP.innerText = todaysDateFormatted;
+dateP.innerText = displayedDate;
+
 //calling on the number <p> and need to assign the fetch data
 
 
