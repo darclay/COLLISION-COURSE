@@ -187,7 +187,8 @@ aside {
 summary {
   background-color: black;
   color: white;
-  transition: background-color 5s ease-out;
+  transition: background-color 6s ease-out;
+  text-align: center;
 }
 summary:hover {
   background-color: rgb(26, 26, 93);
@@ -215,4 +216,30 @@ H6 {
   
 }
 
-/* AT 840 PX WIDTH, I NEED TO CHANGE IT TO BLOCK */
+/* AT 855 PX WIDTH, I NEED TO CHANGE IT TO BLOCK */
+
+@media (max-width: 855px) {
+  .div1 {
+  flex-direction: column;
+  align-items: center;
+  }
+  #Todays_Section {
+    width: 100%;
+  }
+  #NumOfObjects {
+    width: 100%;
+  }
+  #UserInput {
+    flex-direction: column;
+    align-items: center;
+  }
+  .div2 {
+    width: 100%;
+  }
+  #sectionP {
+  width: 100%;
+  padding-top: 20px;
+}
+
+
+}
