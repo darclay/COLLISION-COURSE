@@ -149,6 +149,9 @@ Present to the Group.
 2. 1-2 FEATURES IN THE CODE
 3. WHAT I AM MOST PROUD OF
 4. WHAT FUTURE WORK I WISH TO COMPLETE ON THE SITE
+    -create a link to the astroids orbit viewer
+    -create a division banner which separates the dates with
+    a total of the ammount of astroids
 
 ------------------- HELP AND SUPPORT ----------------------
 
