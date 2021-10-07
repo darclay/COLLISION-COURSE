@@ -77,7 +77,8 @@ const fetchUserData = (userDate) => {
     
     for (let i=0; i <collisionObject.length; i++) {
     
-     
+    const astroidDiv = document.createElement('div'); //I may have to give this a class name for styling purposes.
+    astroidDiv.className = "tiles";
     const collName = document.createElement('p');
     const collSizeMax = document.createElement('p');
     const collSizeMin = document.createElement('p');
@@ -93,13 +94,21 @@ const fetchUserData = (userDate) => {
     collDist.innerText = `Distance from Earth at Close Approach: ${collisionObject[i].close_approach_data[0].miss_distance.miles} miles away`;
     
     
-    
-    summary.appendChild(collName);
-    summary.appendChild(collSizeMax);
-    summary.appendChild(collSizeMin);
-    summary.appendChild(collSpeed);
-    summary.appendChild(collDist);
-    }
+    summary.appendChild(astroidDiv); //This is appending the new div to the summary section;
+    astroidDiv.appendChild(collName);
+    astroidDiv.appendChild(collSizeMax);
+    astroidDiv.appendChild(collSizeMin);
+    astroidDiv.appendChild(collSpeed);
+    astroidDiv.appendChild(collDist);
+
+    astroidDiv.style.backgroundColor = 'red';
+    astroidDiv.style.border = '2px solid white';
+    astroidDiv.style.marginBottom = '10px';
+    astroidDiv.style.marginLeft = '10px';
+    astroidDiv.style.marginRight = '10px';
+    // astroidDiv.style.width = '22%';  
+  
+  }
 
 
   });

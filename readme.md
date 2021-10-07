@@ -97,7 +97,7 @@ LINK: https://www.figma.com/file/lThOe2g8CX1vbsLWeCfuiM/NEAR-EARTH-OBJECT-APPLIC
   --------------------- POST-MVP ------------------------
 
 1. LOOKING UP HISTORICAL DATA - PRIOR DATES
-2. META DATA - LINKING TO NASA'S SITE FOR ADD. INFO
+2. META DATA - LINKING TO NASA'S SITE FOR ADDED INFO
 3. COMPARISONS - COMPARING THE SIZE TO OBJECTS
 
    ----------------------- GOALS --------------------------
@@ -135,10 +135,10 @@ Present to the Group.
 |PSEUDO CODE             |     H    |    .5     |   .5    |
 |FETCH THE API JS        |     H    |     3     |    4    |
 |CREATE HTML BASE        |     H    |     1     |    1    |
-|CSS STYLING /FLEX       |     M    |     6     |         |
-|RESPONSIVE DESIGN       |     H    |     6     |         |
-|EVENT LISTENERS JS      |     H    |     3     |    3    |
-|LOCATE DOM ELEM.        |     H    |     3     |    2    |
+|CSS STYLING /FLEX       |     M    |     6     |    8    |
+|RESPONSIVE DESIGN       |     H    |     6     |    2    |
+|EVENT LISTENERS JS      |     H    |     3     |    5    |
+|LOCATE DOM ELEM.        |     H    |     3     |    5    |
 |ADD DOM ELEM. INNERTEXT |     H    |     3     |   .5    | 
 |------------------------|----------|-----------|---------|
 

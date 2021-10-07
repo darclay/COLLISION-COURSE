@@ -3,7 +3,6 @@ background-color: black;
 }
 
 
-
 /* -----------------HEADER SECTION-------------------------- */
 
 header {
@@ -200,6 +199,28 @@ aside {
   text-align: center;
 }
 
+/* ======================TILES FLEX============================ */
+
+.tiles {
+  display: flex;
+  width: 22%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*==============================================================*/
+
+/*=======================SUMMARY FLEX===========================*/
+
+summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*==============================================================*/
+
+/* ------------------------------------------------------------ */
 summary {
   background-color: black;
   color: white;
