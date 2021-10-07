@@ -75,8 +75,8 @@ color: white;
 font-size: 24px;
 margin-bottom: 0px;
 margin-top: 34px;
-background: -webkit-radial-gradient(rgb(26,26,93),transparent);
-border-radius: 50%;
+/* background: -webkit-radial-gradient(rgb(26,26,93),transparent);
+border-radius: 50%; */
 }
 #dateP {
   text-align: center;
@@ -203,11 +203,13 @@ aside {
 summary {
   background-color: black;
   color: white;
-  transition: background-color 6s ease-out;
   text-align: center;
 }
 summary:hover {
-  background-color: rgb(26, 26, 93);
+  /* background-color: rgb(26, 26, 93); */
+  background: linear-gradient(transparent, rgb(26, 26, 93), transparent);
+  -moz-transition: all 3s ease-in;
+  -webkit-transition: all 3s ease-in;
 }
 
 aside {
