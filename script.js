@@ -74,18 +74,24 @@ const fetchUserData = (userDate) => {
     const summary = document.querySelector('summary');
     const collisionObject = responseJSON.near_earth_objects[userDate];  
     console.log(collisionObject); 
+
+    //----------------------------------------------------------
+                
+    //----------------------------------------------------------
     
     for (let i=0; i <collisionObject.length; i++) {
     
     const astroidDiv = document.createElement('div'); //I may have to give this a class name for styling purposes.
     astroidDiv.className = "tiles";
     const collName = document.createElement('p');
+    // const collName = document.createElement('a');
     const collSizeMax = document.createElement('p');
     const collSizeMin = document.createElement('p');
     const collSpeed = document.createElement('p');
     const collDist = document.createElement('p');
 
-    
+    // collName.href = `'https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=${collisionObject[i].name}&view=VOP'`;
+    // collName.target = '_blank';
 
     collName.innerText = `Name of Astroid:
     ${collisionObject[i].name}`;

@@ -216,6 +216,7 @@ summary {
 
 summary:hover {
   background: linear-gradient(transparent, rgb(26, 26, 93), transparent);
+  transition: background 4s;
 }
 
 .tiles {
