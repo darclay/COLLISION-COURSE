@@ -87,11 +87,16 @@ const fetchUserData = (userDate) => {
 
     
 
-    collName.innerText = `Name of Astroid: ${collisionObject[i].name}`;
-    collSizeMax.innerText = `Estimated Max Diameter: ${collisionObject[i].estimated_diameter.feet.estimated_diameter_max} feet`;
-    collSizeMin.innerText = `Estimated Min Diameter: ${collisionObject[i].estimated_diameter.feet.estimated_diameter_min} feet`;
-    collSpeed.innerText = `Speed at Close Approach: ${collisionObject[i].close_approach_data[0].relative_velocity.miles_per_hour} mph`;
-    collDist.innerText = `Distance from Earth at Close Approach: ${collisionObject[i].close_approach_data[0].miss_distance.miles} miles away`;
+    collName.innerText = `Name of Astroid:
+    ${collisionObject[i].name}`;
+    collSizeMax.innerText = `Estimated Max Diameter:
+    ${collisionObject[i].estimated_diameter.feet.estimated_diameter_max} feet`;
+    collSizeMin.innerText = `Estimated Min Diameter:
+    ${collisionObject[i].estimated_diameter.feet.estimated_diameter_min} feet`;
+    collSpeed.innerText = `Speed at Close Approach:
+    ${collisionObject[i].close_approach_data[0].relative_velocity.miles_per_hour} mph`;
+    collDist.innerText = `Distance from Earth at Close Approach:
+    ${collisionObject[i].close_approach_data[0].miss_distance.miles} miles away`;
     
     
     summary.appendChild(astroidDiv); //This is appending the new div to the summary section;
@@ -107,6 +112,30 @@ const fetchUserData = (userDate) => {
     astroidDiv.style.marginLeft = '10px';
     astroidDiv.style.marginRight = '10px';
     // astroidDiv.style.width = '22%';  
+    collName.style.marginTop = '20px';
+    collName.style.marginBottom = '0px';
+    collName.style.marginLeft = '5px';
+    collName.style.marginRight = '5px';
+  
+    collSizeMax.style.marginTop = '10px';
+    collSizeMax.style.marginBottom = '5px';
+    collSizeMax.style.marginLeft = '5px';
+    collSizeMax.style.marginRight = '5px';
+  
+    collSizeMin.style.marginTop = '5px';
+    collSizeMin.style.marginBottom = '5px';
+    collSizeMin.style.marginLeft = '5px';
+    collSizeMin.style.marginRight = '5px';
+  
+    collSpeed.style.marginTop = '5px';
+    collSpeed.style.marginBottom = '5px';
+    collSpeed.style.marginLeft = '5px';
+    collSpeed.style.marginRight = '5px';
+  
+    collDist.style.marginTop = '5px';
+    collDist.style.marginBottom = '20px';
+    collDist.style.marginLeft = '5px';
+    collDist.style.marginRight = '5px';
   
   }
 
