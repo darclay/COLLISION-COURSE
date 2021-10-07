@@ -193,8 +193,8 @@ aside {
 .tiles {
   display: flex;
   width: 22%;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: center;
 }
 
