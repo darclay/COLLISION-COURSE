@@ -218,10 +218,16 @@ summary:hover {
   background: linear-gradient(transparent, rgb(26, 26, 93), transparent);
 }
 
+.tiles {
+  background: radial-gradient(rgb(165, 7, 7),rgb(204, 148, 43), transparent);
+}
+
+
+
 .tiles.p {
   margin-top: 5px;
   margin-bottom: 5px;
-}
+  }
 
 aside {
   color: white;

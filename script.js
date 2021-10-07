@@ -106,7 +106,7 @@ const fetchUserData = (userDate) => {
     astroidDiv.appendChild(collSpeed);
     astroidDiv.appendChild(collDist);
 
-    astroidDiv.style.backgroundColor = 'red';
+    // astroidDiv.style.backgroundColor = 'red';
     astroidDiv.style.border = '2px solid white';
     astroidDiv.style.marginBottom = '10px';
     astroidDiv.style.marginLeft = '10px';
