@@ -226,7 +226,20 @@ summary:hover {
 .tiles {
   background: radial-gradient(rgb(165, 7, 7),rgb(204, 148, 43), transparent);
 }
-
+.dateBanner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 
 .tiles.p {

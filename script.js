@@ -76,7 +76,10 @@ const fetchUserData = (userDate) => {
     console.log(collisionObject); 
 
     //----------------------------------------------------------
-                
+    const dateSeparator = document.createElement('div');
+    dateSeparator.className = 'dateBanner';
+    dateSeparator.innerText = `${userDate}`;
+    summary.appendChild(dateSeparator);            
     //----------------------------------------------------------
     
     for (let i=0; i <collisionObject.length; i++) {
