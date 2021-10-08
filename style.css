@@ -14,6 +14,8 @@ header {
 }  
 
 h1 {
+  font-family: 'Cinzel', serif;
+  /* font-family: 'Roboto Slab', serif; */
   color: rgb(255, 255, 255);
   font-size: 64px;
   text-align: center;
@@ -95,6 +97,7 @@ h2 {
 }
 
 h4 {
+  font-family: 'Cinzel', serif;
   display: inline-block;
   font-size: 36px;
   color: white;
@@ -163,6 +166,7 @@ h3 {
 /* --------------------PARAGRAPH SECTION ------------------------------------ */
 
 #sectionP {
+  font-family: 'Roboto Slab', serif;
   display: inline-block;
   width: 75%;
   color: white;
